@@ -107,6 +107,7 @@ botonCancelarReserva.addEventListener('click', function() {
 var botonCancelarReservaConfMod = document.getElementById('mod-cancelar-conf');
 botonCancelarReservaConfMod.addEventListener('click', function() {
     var celda = document.querySelector('.pulsadoConf');
+    celda.classList.remove('pulsadoConf');
     var hora = celda.getAttribute('data-hora');
     var fecha = celda.getAttribute('data-fecha');
     aniadirEventoConfirmar(celda, hora, fecha)
@@ -115,6 +116,7 @@ botonCancelarReservaConfMod.addEventListener('click', function() {
 var botonCancelarReservaCancMod = document.getElementById('mod-cancelar-canc');
 botonCancelarReservaCancMod.addEventListener('click', function() {
     var celda = document.querySelector('.pulsadoCanc');
+    celda.classList.remove('pulsadoCanc');
     var hora = celda.getAttribute('data-hora');
     var fecha = celda.getAttribute('data-fecha');
     aniadirEventoCancelar(celda, hora, fecha)
